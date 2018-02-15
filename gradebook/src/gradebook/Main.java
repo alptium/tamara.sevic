@@ -5,62 +5,62 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 				
-		try(Scanner sc= new Scanner(System.in);) {
+		try(Scanner sc = new Scanner(System.in);) {
 					
-			class Students {
-						public String firstname;
-						public String lastname;
-						public double grade;
+			class Student {
+						public String firstName;
+						public String lastName;
+						public double Grade;
 			}
 				
-				Students students[] = new Students[5];
+				Student students[] = new Student[5];
 
-				students[0] = new Students();
-				System.out.println("Enter the first name of 1. student");
-		        students[0].firstname = sc.next();
-		        System.out.println("Enter the last name of 1. student");
-		        students[0].lastname = sc.next();
-		        System.out.println("Enter the grade of 1. student");
-		        students[0].grade = sc.nextDouble();
+				students[0] = new Student();
+				System.out.println("Enter the first name of 1st student");
+		        students[0].firstName = sc.next();
+		        System.out.println("Enter the last name of 1st student");
+		        students[0].lastName = sc.next();
+		        System.out.println("Enter the grade of 1st student");
+		        students[0].Grade = sc.nextDouble();
 		        
-		        students[1] = new Students();
-				System.out.println("Enter the first name of 2. student");
-		        students[1].firstname = sc.next();
-		        System.out.println("Enter the last name of 2. student");
-		        students[1].lastname = sc.next();
-		        System.out.println("Enter the grade of 2. student");
-		        students[1].grade = sc.nextDouble();
+		        students[1] = new Student();
+				System.out.println("Enter the first name of 2nd student");
+		        students[1].firstName = sc.next();
+		        System.out.println("Enter the last name of 2nd student");
+		        students[1].lastName = sc.next();
+		        System.out.println("Enter the grade of 2nd student");
+		        students[1].Grade = sc.nextDouble();
 		        
-		        students[2] = new Students();
-				System.out.println("Enter the first name of 3. student");
-		        students[2].firstname = sc.next();
-		        System.out.println("Enter the last name of 3. student");
-		        students[2].lastname = sc.next();
-		        System.out.println("Enter the grade of 3. student");
-		        students[2].grade = sc.nextDouble();
+		        students[2] = new Student();
+				System.out.println("Enter the first name of 3rd student");
+		        students[2].firstName = sc.next();
+		        System.out.println("Enter the last name of 3rd student");
+		        students[2].lastName = sc.next();
+		        System.out.println("Enter the grade of 3rd student");
+		        students[2].Grade = sc.nextDouble();
 		        
-		        students[3] = new Students();
-				System.out.println("Enter the first name of 4. student");
-		        students[3].firstname = sc.next();
-		        System.out.println("Enter the last name of 4. student");
-		        students[3].lastname = sc.next();
-		        System.out.println("Enter the grade of 4. student");
-		        students[3].grade = sc.nextDouble();
+		        students[3] = new Student();
+				System.out.println("Enter the first name of 4th student");
+		        students[3].firstName = sc.next();
+		        System.out.println("Enter the last name of 4th student");
+		        students[3].lastName = sc.next();
+		        System.out.println("Enter the grade of 4th student");
+		        students[3].Grade = sc.nextDouble();
 		        
-		        students[4] = new Students();
-				System.out.println("Enter the first name of 5. student");
-		        students[4].firstname = sc.next();
-		        System.out.println("Enter the last name of 5. student");
-		        students[4].lastname = sc.next();
-		        System.out.println("Enter the grade of 5. student");
-		        students[4].grade = sc.nextDouble();
+		        students[4] = new Student();
+				System.out.println("Enter the first name of 5th student");
+		        students[4].firstName = sc.next();
+		        System.out.println("Enter the last name of 5th student");
+		        students[4].lastName = sc.next();
+		        System.out.println("Enter the grade of 5th student");
+		        students[4].Grade = sc.nextDouble();
 		        
-		        double totalgrade = 0;
+		        double totalGrade = 0;
 		        for(int i = 0; i < students.length; i++)
 		        {
-		        	totalgrade = (double) (totalgrade + students[i].grade);
+		        	totalGrade = totalGrade + students[i].Grade;
 		        }
 		        System.out.println("Total grade is: " + totalgrade);
 		    
