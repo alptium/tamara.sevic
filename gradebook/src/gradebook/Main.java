@@ -62,7 +62,7 @@ public class Main {
 		        {
 		        	totalGrade = totalGrade + students[i].Grade;
 		        }
-		        System.out.println("Total grade is: " + totalgrade);
+		        System.out.println("Total grade is: " + totalGrade);
 		    
 		}
 
