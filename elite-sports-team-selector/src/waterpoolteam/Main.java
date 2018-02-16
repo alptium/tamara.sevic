@@ -23,7 +23,7 @@ public class Main {
 				System.out.println("Enter your last name");
 				players.lastName = sc.next();
 				System.out.println("Sex (M/F)?");
-				players.sex=sc.next();
+				players.sex = sc.next();
 				System.out.println("Enter your age");
 				players.age = sc.nextInt();
 				System.out.println("Enter your highschool");
@@ -52,7 +52,7 @@ public class Main {
 
 					p.firstName = players.firstName;
 					p.lastName = players.lastName;
-					p.sex=players.sex;
+					p.sex = players.sex;
 					p.age = players.age;
 					p.Highschool = players.Highschool;
 					p.bodyheight = players.bodyheight;
@@ -80,7 +80,7 @@ public class Main {
 
 						p.firstName = players.firstName;
 						p.lastName = players.lastName;
-						p.sex=players.sex;
+						p.sex = players.sex;
 						p.age = players.age;
 						p.Highschool = players.Highschool;
 						p.bodyheight = players.bodyheight;
