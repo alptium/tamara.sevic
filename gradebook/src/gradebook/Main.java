@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 
 				
-		try(Scanner sc = new Scanner(System.in);) {
+		try(Scanner sc = new Scanner(System.in)) {
 					
 			class Student {
 						public String firstName;
