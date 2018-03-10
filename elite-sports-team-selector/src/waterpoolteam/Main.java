@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class Main {
 	
-
-
 	public static void main(String[] args) {
 		System.out.println("Welcome to Waterpool team!");
 		System.out.println("We're looking for new players.");
@@ -17,8 +15,6 @@ public class Main {
 
 			while (true) {
 				Player player = new Player();
-
-				player = new Player();
 				System.out.println("Enter your first name");
 				player.firstName = sc.next();
 				System.out.println("Enter your last name");
@@ -39,22 +35,19 @@ public class Main {
 				player.SHOOT = sc.nextDouble();
 				
 				if(player.sex.equalsIgnoreCase("M")) {
-				if (player.bodyheight < 175 || player.BMI > 35 || player.SWS20m > 12 || player.SHOOT < 65) {
+					if (player.bodyheight < 175 || player.BMI > 35 || player.SWS20m > 12 || player.SHOOT < 65) {
 					System.out.println("Sorry, but you are rejected");
 				} else {
 					System.out.println("Congratulations you are accepted");
-
 					listPass.add(player);
-
 					}
 				}
 				
 				if(player.sex.equalsIgnoreCase("F")) {
-				if (player.bodyheight < 165 || player.BMI > 30 || player.SWS20m > 17 || player.SHOOT < 55) {
+					if (player.bodyheight < 165 || player.BMI > 30 || player.SWS20m > 17 || player.SHOOT < 55) {
 					System.out.println("Sorry, but you are rejected");
 				} else {
 					System.out.println("Congratulations you are accepted");
-
 					listPass.add(player);
 					}
 				}
@@ -75,12 +68,12 @@ public class Main {
 			
 					System.out.println("Candidates who have passed:");
 			
-				int count = 1;
+				int candidateNumber = 1;
 
 				for (Player player : listPass) {
 
 					System.out.println("");
-					System.out.println("Candidate " + count);
+					System.out.println("Candidate " + candidateNumber);
 					System.out.print("First name: " + player.firstName);
 					System.out.print(" Last name: " + player.lastName);
 					System.out.println(" Sex: " + player.sex);
@@ -92,12 +85,12 @@ public class Main {
 					System.out.print(" Shoot: " + player.SHOOT);
 					System.out.println("");
 					System.out.println("---------------------------------------------------------");
-					count++;
+					candidateNumber++;
 
 					}
 
 				} catch (Exception e) {
-					System.out.println("GRESKA!!!!!!!!!!!!!!");
+					System.out.println("ERROR!!!!!!!!!!!!!!");
 					System.out.println(e.toString());
 				}
 
