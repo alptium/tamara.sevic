@@ -11,7 +11,7 @@ public class Main {
 			Student students[] = new Student[5];
 			students[0] = new Student();
 			System.out.println("Enter the first name of 1st student");
-		    students[0].firstName = sc.next();
+			students[0].firstName = sc.next();
 		    System.out.println("Enter the last name of 1st student");
 		    students[0].lastName = sc.next();
 		    System.out.println("Enter the grade of 1st student");
