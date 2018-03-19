@@ -52,6 +52,24 @@ public class Main {
 		    avgGrade = totalGrade / totalNumberStudents;
 			
 			System.out.println("Average grade of all students is " + String.format("%.2g%n", avgGrade));
+		
+			int minGrade = grade[0];
+			int maxGrade = grade[0];
+			
+			for(int i = 1 ; i < grade.length; i++){
+				
+				if (grade[i] < minGrade) {
+					minGrade = grade[i];
+				}
+				
+				if (grade[i] > maxGrade) {
+					maxGrade = grade[i];
+				}		
+			}
+			
+			System.out.println("Minimal grade of all students is " + minGrade);
+			System.out.println("Maximal grade of all students is " + maxGrade + "\n");
+			
 		}
 
 	}
